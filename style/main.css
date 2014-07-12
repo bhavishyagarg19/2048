@@ -2,10 +2,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: url('../tiles/WindowsEvolution/BG7.jpg');
+  color: #FCA983;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px; }
+  font-variant: small-caps;
+  
+  font-size: 16px; }
 
 body {
   margin: 80px 0; }
@@ -16,8 +18,11 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 40px;
   font-weight: bold;
+  color: rgb(255, 119, 42);
+
+  font-style: italic;
   margin: 0;
   display: block;
   float: left; }
@@ -48,20 +53,22 @@ h1.title {
     opacity: 0; } }
 .scores-container {
   float: right;
-  text-align: right; }
+  text-align: right;
+   }
 
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: rgba(125,71,252,0.2);
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
-  color: white;
+  color: rgb(255, 92, 29);
   margin-top: 8px;
+  margin-bottom: 6px;
   text-align: center; }
   .score-container:after, .best-container:after {
     position: absolute;
@@ -72,7 +79,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #FF5B1B; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -101,7 +108,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #44FFE1;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -149,7 +156,8 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: url('../tiles/WindowsEvolution/MSLogotry3.jpg');
+  opacity: 0.95;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -226,7 +234,7 @@ hr {
 
 .tile-container {
   position: absolute;
-  z-index: 2; }
+  z-index: 2;}
 
 .tile, .tile .tile-inner {
   width: 107px;
@@ -308,75 +316,69 @@ hr {
   .tile .tile-inner {
     border-radius: 3px;
     background: #eee4da;
-    text-align: center;
-    font-weight: bold;
+    
+    border-right-color: rgb(176,171,171);
+    border-bottom-color: rgb(176,171,171);
     z-index: 10;
-    font-size: 55px; }
+    font-size: 0px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+
+    background: url('../tiles/WindowsEvolution/2.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    background: url('../tiles/WindowsEvolution/4.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    
+    background: url('../tiles/WindowsEvolution/8.jpg'); }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    
+    background: url('../tiles/WindowsEvolution/16.jpg'); }
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    
+    background: url('../tiles/WindowsEvolution/32.jpg'); }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    
+    background: url('../tiles/WindowsEvolution/64.jpg'); }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 45px; }
+    
+    background: url('../tiles/WindowsEvolution/128.jpg');
+     }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
-        font-size: 25px; } }
+        font-size: 0px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 45px; }
+    
+    background: url('../tiles/WindowsEvolution/256.jpg'); }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
-        font-size: 25px; } }
+        font-size: 0px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 45px; }
+    
+    background: url('../tiles/WindowsEvolution/512.jpg'); }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
-        font-size: 25px; } }
+        font-size: 0px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 35px; }
+    
+    background: url('../tiles/WindowsEvolution/1024.jpg');
+    }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
-        font-size: 15px; } }
+        font-size: 0px; } }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 35px; }
+    background: url('../tiles/WindowsEvolution/2048.jpg'); }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
-        font-size: 15px; } }
+        font-size: 0px; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
     background: #3c3a32;
-    font-size: 30px; }
+    font-size: 0px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
-        font-size: 10px; } }
+        font-size: 0px; } }
 
 @-webkit-keyframes appear {
   0% {
@@ -488,11 +490,11 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: rgba(49,62,252,0.3);
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #FD8E5A;
   height: 40px;
   line-height: 42px;
   display: block;
